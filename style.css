@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 36px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nameList {
+    margin-bottom: 36px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #04A0E9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #04A0E9;
+}
+
+.buttonArea {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+#startButton {
+    padding: 10px;
+    font-size: 18px;
+    margin: 4px;
+    width: 50%;
+}
+
+#resetButton {
+    background-color: #666;
+    padding: 10px;
+    font-size: 18px;
+    margin: 4px;
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+/* 名前、日付、チェックボックスの幅を3等分 */
+li span.name,
+li span.date {
+    flex: 1; /* 名前と日付の幅を1等分ずつ */
+    text-align: left;
+}
+
+.nameListTitle {
+    font-weight: bold;
+}
+
+.exclude-checkbox {
+    flex: 0.5; /* チェックボックスの幅を小さく設定 */
+    text-align: center;
+    margin: 4px;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #04A0E9;
+}
+
+/* メディアクエリ */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .input-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    input {
+        font-size: 18px;
+        width: 43%;
+    }
+
+    button {
+        font-size: 18px;
+        width: auto;
+        width: 14%;
+    }
+
+    #startButton {
+        font-size: 20px;
+    }
+
+    #result {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝礼当番決め</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>朝礼当番決め</h1>
+        <div class="input-container">
+            <input type="text" id="nameInput" placeholder="名前を入力">
+            <input type="text" id="dateInput" placeholder="卒業日を入力" onfocus="this.type='date'" onblur="this.type='text'">
+            <button id="addButton">追加</button>
+        </div>
+        <ul id="namelist">
+            <li class="nameListTitle">
+                <span class="name">名前</span>
+                <span class="date">卒業までの日数</span>
+                <span class="exclude-checkbox">対象外</span>
+            </li>
+        </ul>
+        <div class="nameList">
+            <ul id="nameList"></ul>
+        </div>
+        <div class="buttonArea">
+            <button id="startButton">スタート</button>
+            <button id="resetButton">リセット</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
